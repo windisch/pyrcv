@@ -30,6 +30,24 @@ class Election(object):
         self.candidates_left = self.candidates
 
     def vote(self, ballot):
+        """
+        Adds the ballot of the voter to the election. Here, a ballot can either be a list or a dict
+
+        List
+        ----
+
+        Here, the numbers represents the place where the candidate
+        stands on the candidate list (i.e., 2 stands for candidate_c) and
+        the ordering of the numbers represents the ranking of the vote
+
+        Dict
+        ----
+
+        Here, the keys of the dict should represent the candidates name and the key its ranking.
+
+        Args:
+            ballot (list or dict): The vote
+        """
 
         # Votes should be lists of candidate ids
         if type(ballot) == list:

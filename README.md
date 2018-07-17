@@ -22,12 +22,22 @@ election = Election(
       "candidate_c",
       "candidate_d"])
 
-# Vote
+# Vote, here, the numbers represents the place where the candidate
+# stands on the candidate list (i.e., 2 stands for candidate_c) and
+# the ordering of the numbers represents the ranking of the vote
 election.vote([2, 1, 3])
-election.vote([2, 0, 3])
-election.vote([0, 1, 2])
-election.vote([0, 2, 1])
-election.vote([2, 1, 0])
+election.vote([2, 0, 3]) 
+election.vote([0, 1])
+election.vote([0, 1])
+election.vote([2, 1, 0, 3])
+
+# Alternatively, vote per dict
+election.vote(
+   {
+      'candidate_b': 1,
+      'candidate_a': 2,
+      'candidate_c': 3
+   })
 
 # Compute the winner
 election.tally()
