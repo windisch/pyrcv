@@ -7,7 +7,7 @@ setup(
 
     # dependencies
     install_requires=[
-        'numpy',
+        'numpy>1.14.0,<2.0.0',
         'pytest-runner',
     ],
     tests_require=[
@@ -15,10 +15,10 @@ setup(
     ],
 
     # metadata for upload to PyPI
-    author="Tobia Windisch",
+    author="Tobias Windisch",
     author_email="tobias.windisch@posteo.de",
     description="Python library for ranked choice voting",
     license="GNU GPL3",
     keywords="rcv votings",
-    url="https://github.com/windisch/pyrcv.py",
+    url="https://github.com/windisch/pyrcv",
 )
