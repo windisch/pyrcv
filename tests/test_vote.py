@@ -28,9 +28,6 @@ class TestVote(unittest.TestCase):
         election.vote({'candidate_a': 1, 'candidate_d': 0})
         election.vote({'candidate_a': 1, 'candidate_c': 0})
 
-        # Vote per lists
-        # election.vote(['candidate_c', 'candidate_a'])
-
         # Vote per candidate ids
         election.vote([3, 1, 4, 2])
         election.vote([1, 3, 2])  # means a, c, b
