@@ -1,5 +1,7 @@
 # pyrcv
-Python library for ranked choice voting. This is work in progress.
+Python library for ranked choice voting.
+
+[![Build Status](https://travis-ci.org/windisch/pyrcv.svg?branch=master)](https://travis-ci.org/windisch/pyrcv)
 
 ## Installation
 
